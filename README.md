@@ -99,7 +99,7 @@
   + For this project, the terminal emulator program that is being used is TeraTerm
   + Open up a terminal emulator program on the host computer and select the COM port associated with the pic18f16q41
 
-  ![New Project Creation Window](images/Picture7.PNG)
+ ![New Project Creation Window](images/Picture10.PNG)
 
   + Recall in the UART2 peripheral we set the baud rate to 19200. Configure the terminal emulation program to communicate at the 19200 baud rate
     + Setup &rarr; Serial Port &rarr; Speed: 19200 &rarr; New Setting
