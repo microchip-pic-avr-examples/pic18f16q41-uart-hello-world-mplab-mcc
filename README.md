@@ -46,7 +46,7 @@
   + Set “HF Internal Clock” to 4_MHz
   + Set “Clock Divider” to 1
 
-![New Project Creation Window](images/Picture1.png)
+![New Project Creation Window](images/Picture1.PNG)
 
 
 **Step #3: Adding UART Peripheral**
