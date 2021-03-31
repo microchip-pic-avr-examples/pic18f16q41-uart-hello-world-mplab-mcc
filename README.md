@@ -44,6 +44,7 @@
   +	Set “Clock Source” to High Frequency Internal Oscillator (HFINTOSC)
   + Set “HF Internal Clock” to 4_MHz
   + Set “Clock Divider” to 1
+
   ![New Project Creation Window](images/Picture1.png)
 
 **Step #3: Adding UART Peripheral**
@@ -56,6 +57,7 @@
   + Set the Baud Rate to 19200
   +	Redirect STDIO to UART should be checked since we are going to use a printf statement to send data to the UART peripheral
   + Everything else can be left as default settings
+
   ![New Project Creation Window](images/Picture2.png)
 
 
@@ -65,12 +67,15 @@
     + RX is connected to pin RB5
     + Connect GPIO output to pin RC1 Output(Rename Pin Name to: LED0)
     +	Connect the pins turning those blue unlocked symbols into a green locked symbol.
+
       ![New Project Creation Window](images/Picture3.png)
+
       ![New Project Creation Window](images/Picture4.png)
 
 
   **Step #5: Generate the project**
   + Click the generate button in MCC to create appropriate header and source files for this configuration
+
   ![New Project Creation Window](images/Picture5.png)
 
 
@@ -83,6 +88,7 @@
       + __delay_ms(500)
 
       ![New Project Creation Window](images/Picture6.png)
+
       + Make and Program the Device
 
 
