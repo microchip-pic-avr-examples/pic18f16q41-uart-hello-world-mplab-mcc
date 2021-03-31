@@ -45,8 +45,7 @@
   +	Set “Clock Source” to High Frequency Internal Oscillator (HFINTOSC)
   + Set “HF Internal Clock” to 4_MHz
   + Set “Clock Divider” to 1
-
-![New Project Creation Window](images/Picture1.PNG)
+  ![New Project Creation Window](images/Picture1.PNG)
 
 
 **Step #3: Adding UART Peripheral**
