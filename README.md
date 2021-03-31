@@ -45,6 +45,7 @@
   +	Set “Clock Source” to High Frequency Internal Oscillator (HFINTOSC)
   + Set “HF Internal Clock” to 4_MHz
   + Set “Clock Divider” to 1
+
   ![New Project Creation Window](images/Picture1.PNG)
 
 
@@ -59,7 +60,7 @@
   +	Redirect STDIO to UART should be checked since we are going to use a printf statement to send data to the UART peripheral
   + Everything else can be left as default settings
 
-![New Project Creation Window](images/Picture2.png)
+![New Project Creation Window](images/Picture2.PNG)
 
 
   **Step #4: Configure the Pins/Modify Pin Module**
@@ -69,15 +70,15 @@
     + Connect GPIO output to pin RC1 Output(Rename Pin Name to: LED0)
     +	Connect the pins turning those blue unlocked symbols into a green locked symbol.
 
-![New Project Creation Window](images/Picture3.png)
+![New Project Creation Window](images/Picture3.PNG)
 
-![New Project Creation Window](images/Picture4.png)
+![New Project Creation Window](images/Picture4.PNG)
 
 
   **Step #5: Generate the project**
   + Click the generate button in MCC to create appropriate header and source files for this configuration
 
-![New Project Creation Window](images/Picture5.png)
+![New Project Creation Window](images/Picture5.PNG)
 
 
   **Step #6: Modifying main.c**
@@ -88,7 +89,7 @@
       +	printf(“Hello World! \n\r”);
       + __delay_ms(500)
 
-      ![New Project Creation Window](images/Picture6.png)
+      ![New Project Creation Window](images/Picture6.PNG)
 
       + Make and Program the Device
 
@@ -98,11 +99,12 @@
   + For this project, the terminal emulator program that is being used is TeraTerm
   + Open up a terminal emulator program on the host computer and select the COM port associated with the pic18f16q41
 
-  ![New Project Creation Window](images/Picture7.png)
+  ![New Project Creation Window](images/Picture7.PNG)
 
   + Recall in the UART2 peripheral we set the baud rate to 19200. Configure the terminal emulation program to communicate at the 19200 baud rate
     + Setup &rarr; Serial Port &rarr; Speed: 19200 &rarr; New Setting
-      ![New Project Creation Window](images/Picture8.1.png)
+
+      ![New Project Creation Window](images/Picture8.1.PNG)
 
   + Once the program is update with the new baud rate, the terminal window should appear and display the printf statement written in the while loop of the main.c
 
