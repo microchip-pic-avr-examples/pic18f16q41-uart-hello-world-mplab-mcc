@@ -4,27 +4,27 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f16q41-uart-hello-world-mplab-mcc",
-        "version": "1.0.1",
-        "displayName": "Printing Hello World using  UART for PIC18F16Q41",
+        "version": "",
+        "displayName": "",
         "projectName": "pic18f16q41-uart-hello-world-mplab-mcc",
-        "shortDescription": "Hello World printed to terminal emulator",
+        "shortDescription": "",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.40.0"
+            "semverRange": ""
         },
         "compiler": [
 			{
 				"name": "XC8",
-				"semverRange": "^2.20.0"
+				"semverRange": ""
 			}
 		],
         "dfp": {
-            "name": "PIC18F-Q_DFP",
-            "semverRange": "^1.5.124"
+            "name": "",
+            "semverRange": ""
         },
         "configurator": {
-            "name": "MCC",
-            "semverRange": ">=4.1.0"
+            "name": "",
+            "semverRange": ""
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,12 +36,12 @@
                 "versionRange": "*"
             }
         },
-        "author": "Microchip",
-        "subcategories": [ "MCC"
+        "author": "",
+        "subcategories": [
         ],
-        "peripherals": [ "UART"
+        "peripherals": [
         ],
-        "keywords": [ "MCC"
+        "keywords": [
         ],
 		"additionalData": {
 			"longDescription": {
