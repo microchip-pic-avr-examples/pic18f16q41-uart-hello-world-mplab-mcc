@@ -1,7 +1,7 @@
 <!-- Please do not change this logo with link -->
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Update the title for pic18f16q41-uart-hello-world-mplab-mcc here
+# Printing "Hello World" using UART for pic18f16q41
 
 <!-- This is where the introduction to the example goes, including mentioning the peripherals used -->
 
