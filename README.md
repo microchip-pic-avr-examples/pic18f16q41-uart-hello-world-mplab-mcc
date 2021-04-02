@@ -89,9 +89,12 @@
 
 
       LED0_Toggle();
+
       printf("Hello World! \n\r");
+
       __delay_ms(500);
-      
+
+
   + Make and Program the Device
 
 
