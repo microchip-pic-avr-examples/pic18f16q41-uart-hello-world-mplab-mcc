@@ -2,25 +2,26 @@
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
 # Printing "Hello World" using UART for pic18f16q41
- In this application, "Hello World!" is printed to a terminal emulator using the UART peripheral. This application is the perfect fundamental starting point for getting your pic18f16q41 to complete various applications
+  In this application, "Hello World!" is printed to a terminal emulator using the UART peripheral. This application is the perfect fundamental starting point for getting your pic18f16q41 to complete various applications
 
 
 ## Related Documentation
 
+* [PIC18F16Q41 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F06-16Q41-DataSheet-40002214C.pdf)
+
 * [PIC18F16Q41 Device Page](https://www.microchip.com/wwwproducts/en/PIC18F16Q41)
 
-* [PIC18F16Q41 Users Guide](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F16Q41-Curiosity-Nano-Hardware-User-Guide-DS50003048A.pdf)
+* [PIC18F16Q41 Curiosity Nano Users Guide](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F16Q41-Curiosity-Nano-Hardware-User-Guide-DS50003048A.pdf)
 
-* [PIC18F16Q41 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F06-16Q41-DataSheet-40002214C.pdf)
 
 
 ## Software Used
 
-* [MPLAB® IDE](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide)
+* [MPLAB® X IDE](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide)
 * [MPLAB Code Configurator (MCC)](https://www.microchip.com/mplab/mplab-code-configurator)
 * [MPLAB XC8 Compiler](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers)
 
-* Tera Term
+* [MPLAB Data Visualizer Plugin](https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/mplab-data-visualizer) or other serial terminal
 
 
 ## Hardware Used
@@ -34,12 +35,12 @@
 + Microchip Embedded; Standalone Project
 + Enter the Device
   + For this Project: PIC18F16Q41
-+ Name the Project
++ Enter a name for this project, such as *PrintMessageUART*
   + Name: “PrintMessageUART”
   + **Note: The project name cannot have any empty spaces**
 
 
-**Step #2: MPLAB Code Configurator(MCC)**
+**Step #2: MPLAB Code Configurator (MCC)**
 
 +	Modify the Clock Control
   +	Set “Clock Source” to High Frequency Internal Oscillator (HFINTOSC)
@@ -51,13 +52,13 @@
 
 **Step #3: Adding UART Peripheral**
 
-+ In Device Recourses:
++ In Device Resources:
   + Drivers &rarr; UART &rarr; UART2
 + Once the peripheral is added, modify the peripheral.
   +	Enable UART box should be checked
   + Enable transmit should be checked
   + Set the Baud Rate to 19200
-  +	Redirect STDIO to UART should be checked since we are going to use a printf statement to send data to the UART peripheral
+  +	Enable "Redirect STDIO to UART" in order to use the function (printf) for sending messages.
   + Everything else can be left as default settings
 
 ![New Project Creation Window](images/Picture2.PNG)
@@ -67,8 +68,8 @@
   + There are two pins we need to configure, Transmitter(TX) and Receiver(RX)
     + TX is connected to pin RB7
     + RX is connected to pin RB5
-    + Connect GPIO output to pin RC1 Output(Rename Pin Name to: LED0)
-    +	Connect the pins turning those blue unlocked symbols into a green locked symbol.
+    + Set GPIO output on pin RC1 (Rename pin to: LED0)
+    +	Select the pins. When selected, the pins will change from a blue unlock into a green locked.
 
 ![New Project Creation Window](images/Picture3.PNG)
 
@@ -76,37 +77,37 @@
 
 
   **Step #5: Generate the project**
-  + Click the generate button in MCC to create appropriate header and source files for this configuration
+  + Click the generate button in MCC to create the appropriate header and source files for this configuration
 
 ![New Project Creation Window](images/Picture5.PNG)
 
 
   **Step #6: Modifying main.c**
-  + Once the generation is complete, the new MCC Generated header and Source Files will now be present in the Project window, this will include the main.c source file. Click on the main.c file and you will see a while(1) loop where you can add your application code.
+  + Once the generation is complete, the new MCC generated header and source files will be in the project window. Select the main.c file and you will see an empty while(1) loop where you can add your application code.
   + Select on the source files and open the “main.c” file
     +	As mentioned earlier we are going to put a printf and delay function in the while loop. This printf statement can have whatever you want to be printed.
-      + LED0_Toggle();
-      +	printf(“Hello World! \n\r”);
-      + __delay_ms(500)
 
-      ![New Project Creation Window](images/Picture6.PNG)
 
-      + Make and Program the Device
+      LED0_Toggle();
+      printf("Hello World! \n\r");
+      __delay_ms(500);
+      
+  + Make and Program the Device
 
 
   **Step #7: Terminal Emulator**
 
   + For this project, the terminal emulator program that is being used is TeraTerm
-  + Open up a terminal emulator program on the host computer and select the COM port associated with the pic18f16q41
+  + Open up the serial terminal on the host computer and select the COM port associated with the Curiosity Nano.
 
  ![New Project Creation Window](images/Picture10.PNG)
 
-  + Recall in the UART2 peripheral we set the baud rate to 19200. Configure the terminal emulation program to communicate at the 19200 baud rate
+  + Recall in the UART2 peripheral we set the baud rate to 19200. Configure the serial terminal to communicate at 19200 baud, no parity, and 1 stop bit.
     + Setup &rarr; Serial Port &rarr; Speed: 19200 &rarr; New Setting
 
       ![New Project Creation Window](images/Picture8.1.PNG)
 
-  + Once the program is update with the new baud rate, the terminal window should appear and display the printf statement written in the while loop of the main.c
+  + If everything is setup correctly, then the serial terminal should start displaying the printf statement in the while loop.
 
     ![New Project Creation Window](images/Picture9.png)
 
@@ -116,4 +117,4 @@ This application displays a message on a terminal emulator
 
 ## Summary
 
-This application shows how to set up the UART peripheral in order to display a message on a terminal emulator
+This application shows how to set up the UART peripheral and send a message to a serial terminal.
