@@ -47,7 +47,7 @@
   + Set “HF Internal Clock” to 4_MHz
   + Set “Clock Divider” to 1
 
-  ![New Project Creation Window](images/Picture1.PNG)
+  ![Clock Settings](images/Picture1.PNG)
 
 
 **Step #3: Adding UART Peripheral**
@@ -61,7 +61,7 @@
   +	Enable "Redirect STDIO to UART" in order to use the function (printf) for sending messages.
   + Everything else can be left as default settings
 
-![New Project Creation Window](images/Picture2.PNG)
+![UART Register Settings](images/Picture2.PNG)
 
 
   **Step #4: Configure the Pins/Modify Pin Module**
@@ -69,17 +69,17 @@
     + TX is connected to pin RB7
     + RX is connected to pin RB5
     + Set GPIO output on pin RC1 (Rename pin to: LED0)
-    +	Select the pins. When selected, the pins will change from a blue unlock into a green locked.
+    +	Select the pins. When selected, the pins will change from a blue unlock into a green lock.
 
-![New Project Creation Window](images/Picture3.PNG)
+![Pin Manager](images/Picture3.PNG)
 
-![New Project Creation Window](images/Picture4.PNG)
+![Pin Module](images/Picture4.PNG)
 
 
   **Step #5: Generate the project**
   + Click the generate button in MCC to create the appropriate header and source files for this configuration
 
-![New Project Creation Window](images/Picture5.PNG)
+![Generate](images/Picture5.PNG)
 
 
   **Step #6: Modifying main.c**
@@ -88,11 +88,13 @@
     +	As mentioned earlier we are going to put a printf and delay function in the while loop. This printf statement can have whatever you want to be printed.
 
 
-      LED0_Toggle();
 
-      printf("Hello World! \n\r");
-
-      __delay_ms(500);
+```     while(1)
+      {
+          LED0_Toggle();
+          __delay_ms(250);
+      }
+  ```
 
 
   + Make and Program the Device
@@ -103,16 +105,16 @@
   + For this project, the terminal emulator program that is being used is TeraTerm
   + Open up the serial terminal on the host computer and select the COM port associated with the Curiosity Nano.
 
- ![New Project Creation Window](images/Picture10.PNG)
+ ![Terminal Emulator Port Connection](images/Picture10.PNG)
 
   + Recall in the UART2 peripheral we set the baud rate to 19200. Configure the serial terminal to communicate at 19200 baud, no parity, and 1 stop bit.
     + Setup &rarr; Serial Port &rarr; Speed: 19200 &rarr; New Setting
 
-      ![New Project Creation Window](images/Picture8.1.PNG)
+      ![Terminal Emulator Settings](images/Picture8.1.PNG)
 
   + If everything is setup correctly, then the serial terminal should start displaying the printf statement in the while loop.
 
-    ![New Project Creation Window](images/Picture9.png)
+    ![Terminal Emulator display message](images/Picture9.png)
 
 ## Operation
 
