@@ -116,9 +116,7 @@
 
     ![Terminal Emulator display message](images/Picture9.png)
 
-## Operation
 
-This application displays a message on a terminal emulator
 
 ## Summary
 

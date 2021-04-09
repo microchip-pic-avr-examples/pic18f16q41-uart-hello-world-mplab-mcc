@@ -4,27 +4,27 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f16q41-uart-hello-world-mplab-mcc",
-        "version": "",
-        "displayName": "",
+        "version": "2.0.0",
+        "displayName": "UART Hello World on PIC18F16Q41",
         "projectName": "pic18f16q41-uart-hello-world-mplab-mcc",
-        "shortDescription": "",
+        "shortDescription": "displaying Hello World on a terminal emulator program",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ""
+            "semverRange": ">=5.40.0"
         },
         "compiler": [
 			{
 				"name": "XC8",
-				"semverRange": ""
+				"semverRange": "^2.31.0"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC18F-Q_DFP",
+            "semverRange": "^1.8.154"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=4.1.0"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,16 +32,26 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "PIC18f16Q41",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
+            "MCC",
+            [
+               "Peripherals", "UART"
+            ],
+            [
+               "Peripherals", ""
+            ]
         ],
         "peripherals": [
+            "UART",""
         ],
         "keywords": [
+            "MCC",
+            "Melody"
         ],
 		"additionalData": {
 			"longDescription": {
