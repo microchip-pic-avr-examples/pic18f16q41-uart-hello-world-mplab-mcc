@@ -42,12 +42,10 @@
             [
                "Peripherals", "UART"
             ],
-            [
-               "Peripherals", ""
-            ]
+            
         ],
         "peripherals": [
-            "UART",""
+            "UART"
         ],
         "keywords": [
             "MCC",
