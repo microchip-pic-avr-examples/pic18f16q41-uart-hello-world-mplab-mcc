@@ -43,7 +43,7 @@
                "Peripherals", "UART"
             ],
 
-        ]
+        ],
         "peripherals": [
             "UART"
         ],
