@@ -42,8 +42,8 @@
             [
                "Peripherals", "UART"
             ],
-            
-        ],
+
+        ]
         "peripherals": [
             "UART"
         ],
