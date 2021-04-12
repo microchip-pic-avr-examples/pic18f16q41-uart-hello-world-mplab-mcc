@@ -9,7 +9,7 @@
         "projectName": "pic18f16q41-uart-hello-world-mplab-mcc",
         "shortDescription": "displaying Hello World on a terminal emulator program",
         "ide": {
-            "name": "MPLAB X",
+            "name": "MPLABX",
             "semverRange": ">=5.40.0"
         },
         "compiler": [
@@ -24,7 +24,7 @@
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=4.1.0"
+            "semverRange": ">=3.95.0"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,7 +32,7 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "PIC18f16Q41",
+                "name": "PIC18F16Q41",
                 "versionRange": "*"
             }
         },
@@ -42,7 +42,6 @@
             [
                "Peripherals", "UART"
             ],
-
         ],
         "peripherals": [
             "UART"
