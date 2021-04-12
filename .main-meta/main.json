@@ -9,7 +9,7 @@
         "projectName": "pic18f16q41-uart-hello-world-mplab-mcc",
         "shortDescription": "displaying Hello World on a terminal emulator program",
         "ide": {
-            "name": "MPLABX",
+            "name": "MPLAB X",
             "semverRange": ">=5.40.0"
         },
         "compiler": [
