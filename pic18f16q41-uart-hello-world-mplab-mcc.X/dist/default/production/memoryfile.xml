@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\pic18f16q41-uart-hello-world-mplab-mcc.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>65536</length>
+      <used>1246</used>
+      <free>64290</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>4352</length>
+      <used>124</used>
+      <free>4228</free>
+    </memory>
+  </executable>
+</project>
