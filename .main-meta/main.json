@@ -41,7 +41,7 @@
             "MCC",
             [
                "Peripherals", "UART"
-            ],
+            ]
         ],
         "peripherals": [
             "UART"
