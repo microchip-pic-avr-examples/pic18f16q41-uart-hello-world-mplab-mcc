@@ -97,8 +97,8 @@ void PIN_MANAGER_Initialize(void)
     /**
     PPS registers
     */
-    U2RXPPS = 0xD; //RB5->UART2:RX2;
-    RB7PPS = 0x13;  //RB7->UART2:TX2;
+    U1RXPPS = 0xD; //RB5->UART1:U1RX;
+    RB7PPS = 0x10;  //RB7->UART1:TX1;
 
    /**
     IOCx registers 

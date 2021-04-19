@@ -40,7 +40,7 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
 int main(void)
 {
     SYSTEM_Initialize();
-
+    
     while(1)
     {
         LED0_Toggle();

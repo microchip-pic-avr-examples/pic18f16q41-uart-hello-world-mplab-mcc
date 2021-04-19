@@ -15,8 +15,8 @@
           <itemPath>mcc_generated_files/system/interrupt.h</itemPath>
         </logicalFolder>
         <logicalFolder name="uart" displayName="uart" projectFiles="true">
-          <itemPath>mcc_generated_files/uart/uart2.h</itemPath>
           <itemPath>mcc_generated_files/uart/uart_interface.h</itemPath>
+          <itemPath>mcc_generated_files/uart/uart1.h</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -41,7 +41,7 @@
         </logicalFolder>
         <logicalFolder name="uart" displayName="uart" projectFiles="true">
           <logicalFolder name="src" displayName="src" projectFiles="true">
-            <itemPath>mcc_generated_files/uart/src/uart2.c</itemPath>
+            <itemPath>mcc_generated_files/uart/src/uart1.c</itemPath>
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
@@ -68,7 +68,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.8.154"/>
+        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.11.185"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -224,8 +224,6 @@
         <property key="memories.programmemory.ranges" value="0-ffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/Users/C63402/MPLABXProjects/pic18f16q41-uart-hello-world-mplab-mcc.X/debug/free/pic18f16q41-uart-hello-world-mplab-mcc_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
@@ -255,7 +253,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.8.154"/>
+        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.11.185"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -411,8 +409,6 @@
         <property key="memories.programmemory.ranges" value="0-ffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/Users/C63402/MPLABXProjects/pic18f16q41-uart-hello-world-mplab-mcc.X/debug/pro/pic18f16q41-uart-hello-world-mplab-mcc_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
